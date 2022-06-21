@@ -51,6 +51,7 @@ export const Menu = styled.ul`
         background-color: #2a201e;
         position: absolute;
         top: 70px;
+        
         right: ${({open}) => (open ? "0" : "-100%")};
         width: 100%;
         height: 90vh;

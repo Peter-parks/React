@@ -1,61 +1,63 @@
-import React , {useState} from "react";
+import React, { useState } from "react";
 import { Container, LogoImg, Menu, MenuItem, MenuItemLink, MobileIcon, Wrapper } from "./Navbar.elements";
-import { FaJava,FaAlignJustify,FaEnvelope,FaCameraRetro,FaMugHot,FaStore } from "react-icons/fa";
+import { FaJava, FaAlignJustify, FaEnvelope, FaCameraRetro, FaMugHot, FaStore } from "react-icons/fa";
 import { IconContext } from "react-icons";
 
 
 
 
 
-const Navbar = ()=> {
-          const [menuOption, setMenuOption]  = useState(false)
-    
-    return(
+const Navbar = () => {
+
+    /* hook para el estado del menu, asi poder desplegarlo */
+    const [menuOption, setMenuOption] = useState(false)
+
+    return (
         <Container>
             <Wrapper>
                 {/* estilos globales a los iconos */}
-                <IconContext.Provider value={{ style: {fontSize: "2em"}}}>
+                <IconContext.Provider value={{ style: { fontSize: "2em" } }}>
                     <LogoImg>
-                        <FaJava/>
+                        <FaJava />
                         <p>
                             CoffyTime
                         </p>
                     </LogoImg>
-                    
+
                     <MobileIcon onClick={() => setMenuOption(!menuOption)}>
-                        <FaAlignJustify/>
+                        <FaAlignJustify />
                     </MobileIcon>
 
                     <Menu open={menuOption}>
                         <MenuItem>
                             <MenuItemLink onClick={() => setMenuOption(!menuOption)}>
-                            <div>
-                            <FaStore/>
-                            HOME
-                            </div>
+                                <div>
+                                    <FaStore />
+                                    HOME
+                                </div>
                             </MenuItemLink>
                         </MenuItem>
                         <MenuItem>
                             <MenuItemLink onClick={() => setMenuOption(!menuOption)}>
-                            <div>
-                            <FaCameraRetro/>
-                            GALERIA
-                            </div>
+                                <div>
+                                    <FaCameraRetro />
+                                    GALERIA
+                                </div>
                             </MenuItemLink>
                         </MenuItem> <MenuItem>
                             <MenuItemLink onClick={() => setMenuOption(!menuOption)}>
-                            <div>
-                            <FaMugHot/>
-                            PRODUCTOS
-                            </div>
+                                <div>
+                                    <FaMugHot />
+                                    PRODUCTOS
+                                </div>
                             </MenuItemLink>
-                        </MenuItem> 
+                        </MenuItem>
                         <MenuItem>
                             <MenuItemLink onClick={() => setMenuOption(!menuOption)}>
-                            <div>
-                            <FaEnvelope/>
-                            CONTACTO
-                            </div>
+                                <div>
+                                    <FaEnvelope />
+                                    CONTACTO
+                                </div>
                             </MenuItemLink>
                         </MenuItem>
                     </Menu>
