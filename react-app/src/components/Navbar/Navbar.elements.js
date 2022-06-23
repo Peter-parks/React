@@ -188,7 +188,7 @@ export const MobileIcon = styled.div`
        
         svg{
 
-            
+            positions
             fill: #e0792a;
         
         
