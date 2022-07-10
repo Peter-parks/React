@@ -1,10 +1,11 @@
 import React from 'react'
 import './Home.css'
+import Coffy from '../../Container/Container'
 
-const home = () => {
+const Home = () => {
   return (
-    <div>home</div>
+    <Coffy />
   )
 }
 
-export default home
+export default Home

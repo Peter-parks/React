@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, LogoImg, Menu, MenuItem, MenuItemLink, MobileIcon, Wrapper } from "./Navbar.elements";
 import { FaJava, FaAlignJustify, FaEnvelope, FaCameraRetro, FaMugHot, FaStore } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import { Link } from "react-router-dom";
 
 
 
@@ -30,35 +31,46 @@ const Navbar = () => {
 
                     <Menu open={menuOption}>
                         <MenuItem>
-                            <MenuItemLink onClick={() => setMenuOption(!menuOption)}>
+                            <Link to='/home'>
+                                <MenuItemLink onClick={() => setMenuOption(!menuOption)} >
                                 <div>
                                     <FaStore />
-                                    HOME
+                                    HOME 
                                 </div>
-                            </MenuItemLink>
+                                </MenuItemLink>
+                            </Link>    
                         </MenuItem>
                         <MenuItem>
-                            <MenuItemLink onClick={() => setMenuOption(!menuOption)}>
-                                <div>
-                                    <FaCameraRetro />
-                                    GALERIA
-                                </div>
-                            </MenuItemLink>
-                        </MenuItem> <MenuItem>
-                            <MenuItemLink onClick={() => setMenuOption(!menuOption)}>
-                                <div>
-                                    <FaMugHot />
-                                    PRODUCTOS
-                                </div>
-                            </MenuItemLink>
+                            <Link to='/galeria'>
+                                <MenuItemLink onClick={() => setMenuOption(!menuOption)}>
+                                    <div>
+                                    
+                                        <FaCameraRetro />
+                                        GALERIA
+                                    
+                                    </div>
+                                </MenuItemLink>
+                            </Link>    
+                        </MenuItem> 
+                        <MenuItem>
+                            <Link to='/producto'>
+                                <MenuItemLink onClick={() =>    setMenuOption(!menuOption)}>
+                                    <div>
+                                        <FaMugHot />
+                                        PRODUCTOS
+                                    </div>
+                                </MenuItemLink>
+                            </Link>
                         </MenuItem>
                         <MenuItem>
-                            <MenuItemLink onClick={() => setMenuOption(!menuOption)}>
-                                <div>
-                                    <FaEnvelope />
-                                    CONTACTO
-                                </div>
-                            </MenuItemLink>
+                            <Link to='/contacto'>
+                                <MenuItemLink onClick={() => setMenuOption(!menuOption)}>
+                                    <div>
+                                        <FaEnvelope />
+                                        CONTACTO
+                                    </div>
+                                </MenuItemLink>
+                            </Link>
                         </MenuItem>
                     </Menu>
                 </IconContext.Provider>

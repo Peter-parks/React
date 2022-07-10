@@ -1,0 +1,43 @@
+.btn_card {
+   
+    display: flex;
+    justify-content: center;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.btn_card button {
+    width: 80px;
+    height: 80x;
+    padding: 5px;
+    background-color:#2a201e ;
+    
+    cursor: pointer;
+    border: none;
+    
+}
+
+.btn_card button p {
+    color:#e0792a ;
+    font-size: 1.5rem;
+}
+
+.btn_card button p:hover{
+    color: #fff;
+}
+
+
+
+.card{
+    display: flex;
+    justify-content: center;
+}
+
+span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:#e0792a ;
+}

@@ -1,11 +1,14 @@
-.card_container {
+.card{
     width: 300px;
+    height: 500px;
     margin: auto;
     margin-top: 1rem;
     overflow:hidden;
     box-shadow: 0px 0px 15px -5px;
     transition: 0.5s ;
     background-color: #2a201e;
+    
+    
 }
 
 .card_container:hover {
@@ -47,44 +50,18 @@ h2, p {
 
 }
 
-.card_text{
+.card_text {
     padding: 8px;
+    overflow: hidden;
+    height:200px;
+
 }
 
-.btn_card {
-   
-    display: flex;
+.detailsBtn{
     justify-content: center;
 }
 
-.btn_card button {
-    width: 80px;
-    height: 80x;
-    padding: 5px;
-    background-color:#2a201e ;
-    
-    cursor: pointer;
-    border: none;
-    
-}
-
-.btn_card button p {
-    color:#e0792a ;
-    font-size: 1.5rem;
-}
-
-.btn_card button p:hover{
-    color: #fff;
-}
-
-
-
-.card{
-    display: flex;
-    justify-content: center;
-}
-
-span{
-    font-size: 1.5rem;
-    font-weight: bold;
+.btnInfo{
+   display: flex;
+   justify-content: center;
 }

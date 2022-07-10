@@ -77,7 +77,7 @@ export const MenuItem = styled.li`
     }
 `;
 
-export const MenuItemLink = styled.a`
+export const MenuItemLink = styled.div`
 
     heigth: 100%;
     display: flex;

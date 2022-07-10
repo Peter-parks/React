@@ -1,9 +1,10 @@
 import React from 'react'
+import './Galeria.css'
 
 const Galeria = () => {
   return (
-    <div>Galeria</div>
+    <h2>Pagina de  galeria</h2>
   )
 }
 
-export default Galeria
+export default Galeria;
