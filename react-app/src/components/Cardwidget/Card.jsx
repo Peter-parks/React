@@ -1,12 +1,13 @@
 
 import React from "react";
-import Detail from "../Details/Detail";
+import { Link} from "react-router-dom";
+
 
 import './Card.css'
 
 
 
-function Card ({title,img_url,text}){
+function Card ({id,title,img_url,text}){
 
     
 
@@ -31,7 +32,13 @@ function Card ({title,img_url,text}){
                     </div>
                 </div>
                 
-               <Detail/>
+                
+                <div className="btn btn-dark btnInfo mb-2">
+                    <Link to={`/coffy/${id}`}>
+                        +Info
+                    </Link>
+                </div>
+                
             </div>
        
         

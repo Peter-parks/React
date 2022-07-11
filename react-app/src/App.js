@@ -5,25 +5,28 @@ import Home from './components/Pages/Home/Home';
 import Galeria from './components/Pages/Galeria/Galeria';
 import Producto from './components/Pages/Producto/Producto';
 import Contacto from './components/Pages/Contacto/Contacto';
-import Card from './components/Cardwidget/Card';
+import Detail from './components/Detail/Detail'
 
-import Coffy from './components/Container/Container';
-
-
-/* import CoffyContainer from './components/Container/Container'; */
-
-
+import NotFound from './components/Pages/NotFound';
 
 function App() {
 
   return (
+    
   <div className='container-fluid'>
     <Navbar/>
-   <Routes>
-      <Route path="/Home" element={<Home/>}></Route>
-      <Route path="/Galeria" element={<Galeria/>}></Route>
-      <Route path="/Producto" element={<Producto/>}></Route>
-      <Route path="/Contacto" element={<Contacto/>}></Route>
+    <Routes>
+    
+      
+      <Route path="/galeria" element={<Galeria/>}></Route>
+      <Route path="/producto" element={<Producto/>}></Route>
+      <Route path="/contacto" element={<Contacto/>}></Route>
+      <Route path="/home" element={<Home/>}></Route>
+      <Route path="/coffy/:id" exact element={<Detail/>}></Route>
+      
+      <Route path="*" element={<NotFound/>}></Route>
+    
+      
     </Routes>
 
   </div>

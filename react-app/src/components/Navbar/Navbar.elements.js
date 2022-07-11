@@ -34,6 +34,7 @@ export const LogoImg = styled.div`
 
     svg{
         fill: #e0792a;
+        padding-bottom: 15px;
         
     }
 

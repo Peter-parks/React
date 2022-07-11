@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 import Card from '../Cardwidget/Card';
-import Detail from '../Details/Detail';
+
 
 const Coffy = () => {
 const [Coffy, setCoffy] = useState([
@@ -55,7 +55,7 @@ return (
     <div className='container'>
         <div className='row row-cols-auto justify-content-center'>
             
-            {Coffy.map( Coffy =>{
+             {Coffy.map( Coffy =>{
                 return(
                                         
                     <div className='col-lg-4 col-md-6 col-sm-12'>
@@ -63,6 +63,7 @@ return (
                             title={Coffy.title}
                             img_url={Coffy.img_url}
                             text={Coffy.text}
+                            id={Coffy.id}
                             
                         />
                         
